@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-ivory: #f6f2ec;
+  --color-ivory-deep: #efe8de;
+  --color-ink: #15130f;
+  --color-charcoal: #2a251f;
+  --color-warm-grey: #948a7c;
+  --color-warm-grey-light: #c9c0b3;
+  --color-accent: #6e1423;
+  --color-accent-light: #9c3b46;
+  --color-accent-soft: #f0dcd9;
+  --color-plum: #3a1f3d;
+
+  --background: var(--color-ivory);
+  --foreground: var(--color-ink);
+
+  /* Glass material tokens — translucent readings of the existing ink/accent
+     palette rather than new brand colors, so glass surfaces stay part of the
+     same environment as the rest of the site. */
+  --glass-ink-fill: rgba(21, 19, 15, 0.55);
+  --glass-ink-fill-strong: rgba(21, 19, 15, 0.75);
+  --glass-plum-fill: rgba(58, 31, 61, 0.28);
+  --glass-border: rgba(246, 242, 236, 0.14);
+  --glass-border-strong: rgba(246, 242, 236, 0.28);
+  --glass-highlight: rgba(246, 242, 236, 0.08);
 }
 
 @theme inline {
+  --color-ivory: var(--color-ivory);
+  --color-ivory-deep: var(--color-ivory-deep);
+  --color-ink: var(--color-ink);
+  --color-charcoal: var(--color-charcoal);
+  --color-warm-grey: var(--color-warm-grey);
+  --color-warm-grey-light: var(--color-warm-grey-light);
+  --color-accent: var(--color-accent);
+  --color-accent-light: var(--color-accent-light);
+  --color-accent-soft: var(--color-accent-soft);
+  --color-plum: var(--color-plum);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ivory);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.grain-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Glass material system: large stage surfaces vs. compact interface chips.
+   Both fall back to a more opaque fill when backdrop-filter isn't supported,
+   so the premium feel (border + shadow + contrast) survives without blur. */
+.glass-stage {
+  position: relative;
+  background: linear-gradient(155deg, var(--glass-plum-fill), var(--glass-ink-fill));
+  border: 1px solid var(--glass-border);
+  border-radius: 2rem;
+  box-shadow:
+    0 40px 80px -30px rgba(10, 4, 12, 0.65),
+    inset 0 1px 0 var(--glass-highlight);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+}
+
+.glass-chip {
+  background: var(--glass-ink-fill-strong);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass-stage {
+    background: linear-gradient(155deg, rgba(58, 31, 61, 0.92), rgba(21, 19, 15, 0.94));
+  }
+  .glass-chip {
+    background: rgba(21, 19, 15, 0.92);
+  }
+}
+
+.glass-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    var(--glass-highlight) 0%,
+    transparent 22%,
+    transparent 78%,
+    var(--glass-highlight) 100%
+  );
+  opacity: 0.6;
 }

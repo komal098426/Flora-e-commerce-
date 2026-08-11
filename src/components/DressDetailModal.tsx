@@ -589,8 +589,8 @@ function OrderPanel({
       {!configured ? (
         <p className="mt-5 text-sm text-accent">
           WhatsApp ordering isn&rsquo;t connected yet. Please email{" "}
-          <a href="mailto:atelier@maisonverre.example" className="underline underline-offset-4">
-            atelier@maisonverre.example
+          <a href="mailto:atelier@floradahlia.example" className="underline underline-offset-4">
+            atelier@floradahlia.example
           </a>{" "}
           with the piece reference {dress.productReference} and we&rsquo;ll help directly.
         </p>

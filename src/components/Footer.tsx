@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
             <p className="font-display text-xl tracking-[0.25em] text-ivory uppercase">
-              Maison Verre
+              Flora Dahlia
             </p>
             <p className="mt-3 max-w-xs text-sm">
               Dresses cut, draped, and finished by hand in a small studio.
@@ -38,7 +38,7 @@ export default function Footer() {
             <p className="text-xs tracking-[0.3em] text-ivory/40 uppercase">Connect</p>
             <div className="mt-4 flex gap-4">
               <a
-                href="mailto:atelier@maisonverre.example"
+                href="mailto:atelier@floradahlia.example"
                 aria-label="Email"
                 className="rounded-full border border-ivory/20 p-2.5 hover:border-ivory hover:text-ivory"
               >
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-4 border-t border-ivory/10 pt-6 text-xs text-ivory/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Maison Verre. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Flora Dahlia. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-ivory/70">Privacy</a>
             <a href="#" className="hover:text-ivory/70">Accessibility statement</a>

@@ -50,7 +50,7 @@ export default function Navbar() {
             scrolled ? "text-ink" : "text-ivory"
           }`}
         >
-          Maison Verre
+          Flora Dahlia
         </a>
 
         <nav

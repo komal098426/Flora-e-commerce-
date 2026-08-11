@@ -60,10 +60,10 @@ export default function Conversion() {
               <dt className="text-ivory/40">Email</dt>
               <dd>
                 <a
-                  href="mailto:atelier@maisonverre.example"
+                  href="mailto:atelier@floradahlia.example"
                   className="underline underline-offset-4 hover:text-accent-soft"
                 >
-                  atelier@maisonverre.example
+                  atelier@floradahlia.example
                 </a>
               </dd>
             </div>

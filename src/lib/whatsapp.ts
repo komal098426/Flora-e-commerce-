@@ -2,11 +2,9 @@ import type { Dress } from "./dresses";
 
 /**
  * Configured outside product content so the client can change the ordering
- * number without touching individual dress records. Replace with the
- * Atelier's real WhatsApp Business number (country code + number, no
- * leading zero or "+") before launch.
+ * number without touching individual dress records.
  */
-export const WHATSAPP_NUMBER = "44XXXXXXXXXX";
+export const WHATSAPP_NUMBER = "923364300129";
 
 export function isWhatsAppConfigured() {
   return /^\d{8,15}$/.test(WHATSAPP_NUMBER);
@@ -28,7 +26,7 @@ type OrderDetails = {
 
 export function buildOrderMessage({ dress, size, quantity }: OrderDetails): string {
   const lines = [
-    "Hello Maison Verre, I would like to order or enquire about this piece.",
+    "Hello Flora Dahlia, I would like to order or enquire about this piece.",
     "",
     `Dress: ${dress.name}`,
     `Reference: ${dress.productReference}`,
@@ -46,7 +44,7 @@ export function buildOrderMessage({ dress, size, quantity }: OrderDetails): stri
 
 export function buildEnquiryMessage(dress: Dress): string {
   const lines = [
-    "Hello Maison Verre, I would like more information about this piece.",
+    "Hello Flora Dahlia, I would like more information about this piece.",
     "",
     `Dress: ${dress.name}`,
     `Reference: ${dress.productReference}`,

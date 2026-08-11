@@ -17,11 +17,11 @@ const sans = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Maison Verre | Dresses in Motion",
+  title: "Flora Dahlia | Dresses in Motion",
   description:
     "A premium, editorial fashion showcase. Discover the collection, explore the story, and book a private fitting.",
   openGraph: {
-    title: "Maison Verre | Dresses in Motion",
+    title: "Flora Dahlia | Dresses in Motion",
     description:
       "A premium, editorial fashion showcase. Discover the collection, explore the story, and book a private fitting.",
     type: "website",

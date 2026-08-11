@@ -128,3 +128,25 @@ body {
   );
   opacity: 0.6;
 }
+
+/* Custom flower cursor: applied only once JS confirms a fine pointer is
+   active (see CustomCursor.tsx). Native cursors are explicitly restored for
+   text entry, selection, and disabled controls — the flower is a brand
+   accent layered on top of pointer-events:none, never a replacement for
+   those task-specific cues. */
+.custom-cursor-active,
+.custom-cursor-active * {
+  cursor: none;
+}
+
+.custom-cursor-active input,
+.custom-cursor-active textarea,
+.custom-cursor-active select,
+.custom-cursor-active [contenteditable="true"] {
+  cursor: auto !important;
+}
+
+.custom-cursor-active :disabled,
+.custom-cursor-active [aria-disabled="true"] {
+  cursor: not-allowed !important;
+}

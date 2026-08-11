@@ -56,7 +56,7 @@ export const dresses: Dress[] = [
     descriptor: "Structured crepe, emerald florals, sheer cape sleeves",
     detail:
       "A sculpted high-neck column falls into dramatic sheer cape sleeves, with hand-set emerald and black rose appliqué tracing the body from collar to hem.",
-    price: "Enquire for pricing",
+    price: "£3,800",
     image: "/dresses/emerald-bloom-gown.jpg",
     tone: ["#0d1f16", "#1c4a34"],
     productReference: "FD-EMB-01",
@@ -74,7 +74,7 @@ export const dresses: Dress[] = [
     descriptor: "Sheer bishop sleeves, gilt florals, black chiffon",
     detail:
       "Sheer bishop sleeves and a gathered high neckline open into a full black chiffon skirt, traced top to hem in gold vine embroidery and sculpted florals.",
-    price: "Enquire for pricing",
+    price: "£3,200",
     image: "/dresses/noir-vine-gown.jpg",
     tone: ["#15130f", "#3a2f14"],
     productReference: "FD-NVN-02",
@@ -92,7 +92,7 @@ export const dresses: Dress[] = [
     descriptor: "Duchesse satin, sage & ivory colour-block, pearl button",
     detail:
       "A diagonal colour-block seam in sage and ivory satin wraps the body, closed with a single row of hand-sewn pearl buttons at the collar.",
-    price: "Enquire for pricing",
+    price: "£2,600",
     image: "/dresses/meridian-colourblock-gown.jpg",
     tone: ["#aab89a", "#e8e2d3"],
     productReference: "FD-MER-03",
@@ -110,7 +110,7 @@ export const dresses: Dress[] = [
     descriptor: "Champagne duchesse satin, sweetheart neckline, emerald bows",
     detail:
       "An off-shoulder sweetheart bodice in pearl-strewn champagne satin opens into a princess-cut ball skirt, finished with emerald grosgrain bows and hand-beaded leaf embroidery.",
-    price: "Enquire for pricing",
+    price: "£6,900",
     image: "/dresses/gilded-rosette-gown.jpg",
     tone: ["#e9d9ae", "#3d4a2e"],
     productReference: "FD-GRT-04",
@@ -129,7 +129,7 @@ export const dresses: Dress[] = [
     descriptor: "Structured crepe, crimson florals, sheer cape sleeves",
     detail:
       "The sister silhouette to our Emerald Bloom, cut from the same sculpted column with sheer cape sleeves — here traced in deep crimson roses and black foliate appliqué.",
-    price: "Enquire for pricing",
+    price: "£3,800",
     image: "/dresses/crimson-bloom-gown.jpg",
     tone: ["#f4efe6", "#7a1620"],
     productReference: "FD-CRB-05",
@@ -147,7 +147,7 @@ export const dresses: Dress[] = [
     descriptor: "Ivory satin, oxblood underskirt, hand-tied ribbons",
     detail:
       "An off-shoulder sweetheart ball gown in ivory satin, its bodice laced with beaded branches and finished in a cascade of oxblood grosgrain bows over a wine-dark underskirt.",
-    price: "Enquire for pricing",
+    price: "£4,400",
     image: "/dresses/cardinal-ribbon-gown.jpg",
     tone: ["#f4efe6", "#6e1423"],
     productReference: "FD-CDR-06",
@@ -165,7 +165,7 @@ export const dresses: Dress[] = [
     descriptor: "Ivory satin, cathedral train, hand-set florals",
     detail:
       "A high-neck, long-sleeve ball gown finished with a cathedral train, scattered top to hem with hand-set crimson and ivory florals and fine gold embroidery.",
-    price: "Enquire for pricing",
+    price: "£7,200",
     image: "/dresses/ivory-garden-gown.jpg",
     tone: ["#f4efe6", "#8a2430"],
     productReference: "FD-IVG-07",
@@ -183,7 +183,7 @@ export const dresses: Dress[] = [
     descriptor: "Draped satin, one shoulder, thigh-high slit",
     detail:
       "A one-shoulder gown in draped navy satin meets a fluid silver underlay through a thigh-high slit, anchored by a crystal shoulder brooch and hand-beaded branch embroidery.",
-    price: "Enquire for pricing",
+    price: "£2,900",
     image: "/dresses/midnight-sapphire-gown.jpg",
     tone: ["#141b33", "#8a93a8"],
     productReference: "FD-MDS-08",
@@ -201,7 +201,7 @@ export const dresses: Dress[] = [
     descriptor: "Layered tulle, fuchsia florals, asymmetric shoulder",
     detail:
       "Layers of ivory tulle scattered with heart-shaped crystals fall from an asymmetric one-shoulder bodice, gathered with oversized fuchsia and ivory blooms at the waist.",
-    price: "Enquire for pricing",
+    price: "£3,600",
     image: "/dresses/camellia-tulle-gown.jpg",
     tone: ["#f4efe6", "#c23a72"],
     productReference: "FD-CAM-09",
@@ -219,7 +219,7 @@ export const dresses: Dress[] = [
     descriptor: "Layered organza, noir & blush ruffles, sculpted roses",
     detail:
       "A strapless silhouette built entirely from layered black and blush organza ruffles, gathered with oversized sculpted roses at the bodice and hip.",
-    price: "Enquire for pricing",
+    price: "£5,400",
     image: "/dresses/noir-blush-gown.jpg",
     tone: ["#1a1414", "#e7b9c0"],
     productReference: "FD-NRB-10",
@@ -238,7 +238,7 @@ export const dresses: Dress[] = [
     descriptor: "Draped satin, lilac, crystal shoulder bloom",
     detail:
       "A single crystal-embroidered shoulder anchors this draped lilac satin gown, its high slit and fluid ruffled train built for movement on the dance floor.",
-    price: "Enquire for pricing",
+    price: "£2,800",
     image: "/dresses/lilac-crystal-gown.jpg",
     tone: ["#b7b3dc", "#e4defa"],
     productReference: "FD-LIL-11",
@@ -256,7 +256,7 @@ export const dresses: Dress[] = [
     descriptor: "Beaded lace, sheer illusion sleeves, cathedral train",
     detail:
       "A high-neck illusion bodice in hand-beaded oxblood lace opens into a full ball skirt scattered with floral appliqué and a sweeping cathedral train.",
-    price: "Enquire for pricing",
+    price: "£6,500",
     image: "/dresses/oxblood-lace-gown.jpg",
     tone: ["#4a1420", "#7a1f2b"],
     productReference: "FD-OXB-12",
@@ -274,7 +274,7 @@ export const dresses: Dress[] = [
     descriptor: "Beaded bodice, navy rose corsage, tiered train",
     detail:
       "A strapless hand-beaded bodice is finished with a sculpted navy and ivory rose corsage at the hip, falling into a tiered, jewel-draped organza train.",
-    price: "Enquire for pricing",
+    price: "£4,200",
     image: "/dresses/winter-rose-gown.jpg",
     tone: ["#e7e6ee", "#1c2340"],
     productReference: "FD-WTR-13",
@@ -292,7 +292,7 @@ export const dresses: Dress[] = [
     descriptor: "Gilt embroidery, burgundy cape, floral appliqué",
     detail:
       "A fitted champagne bodice in fine gilt embroidery is finished with a dramatic burgundy cape and matching floral appliqué, cut for a grand entrance.",
-    price: "Enquire for pricing",
+    price: "£4,800",
     image: "/dresses/sovereign-cape-gown.jpg",
     tone: ["#e9d9ae", "#5c1420"],
     productReference: "FD-SVC-14",
@@ -310,7 +310,7 @@ export const dresses: Dress[] = [
     descriptor: "Liquid satin, gold beading, thigh-high slit",
     detail:
       "A single beaded diagonal line traces this fluid champagne satin gown from shoulder to hip, opening into a thigh-high slit and soft train.",
-    price: "Enquire for pricing",
+    price: "£2,400",
     image: "/dresses/aurelia-slip-gown.jpg",
     tone: ["#efe8de", "#c9a86a"],
     productReference: "FD-AUR-15",
@@ -328,7 +328,7 @@ export const dresses: Dress[] = [
     descriptor: "Beaded tulle, crimson roses, cathedral sleeves",
     detail:
       "Fine pearl and crystal beading covers this ivory tulle ball gown top to train, punctuated with hand-set crimson roses down the bodice and sheer cathedral sleeves.",
-    price: "Enquire for pricing",
+    price: "£6,800",
     image: "/dresses/briar-rose-gown.jpg",
     tone: ["#f4efe6", "#8a2430"],
     productReference: "FD-BRR-16",
@@ -346,7 +346,7 @@ export const dresses: Dress[] = [
     descriptor: "Off-shoulder, gilt vine embroidery, rose-lined train",
     detail:
       "An off-shoulder sweetheart ball gown in gilt vine-embroidered ivory, its voluminous skirt lined in deep red roses for a dramatic reveal with every step.",
-    price: "Enquire for pricing",
+    price: "£4,600",
     image: "/dresses/scarlet-court-gown.jpg",
     tone: ["#f4efe6", "#7a1620"],
     productReference: "FD-SCC-17",

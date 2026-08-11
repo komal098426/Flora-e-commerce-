@@ -1,4 +1,4 @@
-import MeshGradient from "./MeshGradient";
+import Image from "next/image";
 import RevealOnScroll from "./RevealOnScroll";
 
 export default function BrandStatement() {
@@ -10,14 +10,19 @@ export default function BrandStatement() {
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 sm:px-10 lg:grid-cols-2">
         <RevealOnScroll>
-          <div className="aspect-4/5 w-full overflow-hidden rounded-3xl">
-            <MeshGradient tone={["#c9c0b3", "#948a7c"]} className="h-full w-full">
-              <div className="flex h-full w-full items-end p-8">
-                <p className="text-xs tracking-[0.3em] text-ink/50 uppercase">
-                  Studio, Atelier No. 4
-                </p>
-              </div>
-            </MeshGradient>
+          <div className="relative aspect-4/5 w-full overflow-hidden rounded-3xl bg-ink/5">
+            <Image
+              src="/story-black-gold-gown.jpg"
+              alt="Model in a black velvet off-shoulder gown with hand-beaded gold floral embroidery and a thigh-high slit, in the studio"
+              fill
+              sizes="(min-width: 1024px) 45vw, 100vw"
+              className="object-cover object-top"
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-ink/80 via-ink/15 to-transparent p-8 pt-20">
+              <p className="text-xs tracking-[0.3em] text-ivory/80 uppercase">
+                Studio, Atelier No. 4
+              </p>
+            </div>
           </div>
         </RevealOnScroll>
 

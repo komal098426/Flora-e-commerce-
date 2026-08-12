@@ -1,4 +1,4 @@
-import MeshGradient from "./MeshGradient";
+import Image from "next/image";
 import RevealOnScroll from "./RevealOnScroll";
 
 const stages = [
@@ -7,21 +7,24 @@ const stages = [
     label: "01 — Silhouette",
     title: "The line comes first",
     copy: "Every piece is draped directly on a form before a single seam is cut, so the finished silhouette holds its shape from the first fitting.",
-    tone: ["#2a251f", "#948a7c"] as [string, string],
+    image: "/dresses/29cbf934-9be2-4874-aaee-deca828dd50b.jfif",
+    alt: "Pearl Cascade Gown — ivory satin ball gown with pearl and crystal embroidery",
   },
   {
     id: "fabric",
     label: "02 — Fabric",
     title: "Fibres, chosen deliberately",
     copy: "Silk charmeuse, wool crepe, duchesse satin — each fabric is selected for how it falls and moves, not only how it photographs.",
-    tone: ["#c9a86a", "#7a5c33"] as [string, string],
+    image: "/dresses/37c7158c-2e8a-41e1-8126-3373bff96cce.jfif",
+    alt: "Silk Flora Skirt — luminous champagne satin A-line skirt with trailing floral embroidery",
   },
   {
     id: "construction",
     label: "03 — Construction",
     title: "Finished by hand",
     copy: "French seams, hand-set pleats, and covered closures are standard, not optional — the inside of the garment is made to the same standard as the outside.",
-    tone: ["#6e1423", "#2a0a10"] as [string, string],
+    image: "/dresses/405c352a-baac-45c4-b39c-d5aa34dbde4a.jfif",
+    alt: "Azure Tulip Gown — white and powder blue mermaid gown with sculpted tulip appliqué",
   },
 ];
 
@@ -48,14 +51,20 @@ export default function DetailStory() {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {stages.map((stage, i) => (
             <RevealOnScroll key={stage.id} delay={i * 0.12}>
-              <div className="aspect-square w-full overflow-hidden rounded-2xl">
-                <MeshGradient tone={stage.tone} className="h-full w-full">
-                  <div className="flex h-full items-end p-6">
-                    <span className="text-xs tracking-[0.3em] text-ivory/70 uppercase">
-                      {stage.label}
-                    </span>
-                  </div>
-                </MeshGradient>
+              <div className="relative aspect-square w-full overflow-hidden rounded-2xl">
+                <Image
+                  src={stage.image}
+                  alt={stage.alt}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-ink/70 via-ink/10 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-6">
+                  <span className="text-xs tracking-[0.3em] text-ivory/80 uppercase">
+                    {stage.label}
+                  </span>
+                </div>
               </div>
               <h3 className="mt-5 font-display text-2xl text-ink italic">
                 {stage.title}

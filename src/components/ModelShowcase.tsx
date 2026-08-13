@@ -1,10 +1,10 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import Image from "next/image";
 import { useState } from "react";
 import { dresses, looks } from "@/lib/dresses";
 import { useDressDetail } from "./DressDetailProvider";
-import MeshGradient from "./MeshGradient";
 import RevealOnScroll from "./RevealOnScroll";
 
 export default function ModelShowcase() {
@@ -83,30 +83,39 @@ export default function ModelShowcase() {
                 transition={{ duration: reduceMotion ? 0.01 : 0.6, ease: [0.16, 1, 0.3, 1] }}
                 className="absolute inset-0"
               >
-                <MeshGradient tone={active.tone} className="h-full w-full">
-                  <div className="flex h-full w-full flex-col justify-between p-8 sm:p-10">
-                    <span className="w-fit rounded-full border border-ivory/30 px-4 py-1.5 text-xs tracking-[0.3em] text-ivory/80 uppercase">
-                      {active.title}
-                    </span>
-                    {activeDress && (
-                      <div>
-                        <p className="font-display text-3xl text-ivory italic">
-                          {activeDress.name}
-                        </p>
-                        <p className="mt-1 text-sm text-ivory/60">
-                          {activeDress.descriptor}
-                        </p>
-                        <button
-                          type="button"
-                          onClick={() => openDressDetail(activeDress.id, "model_showcase")}
-                          className="mt-4 inline-block text-sm tracking-wide text-ivory underline underline-offset-4 hover:text-accent-soft"
-                        >
-                          Explore the look
-                        </button>
-                      </div>
-                    )}
-                  </div>
-                </MeshGradient>
+                {activeDress && (
+                  <Image
+                    src={activeDress.image}
+                    alt={activeDress.name}
+                    fill
+                    sizes="(min-width: 1024px) 55vw, 100vw"
+                    className="object-cover object-top"
+                    priority
+                  />
+                )}
+                <div className="absolute inset-0 bg-linear-to-t from-ink/80 via-ink/30 to-ink/10" />
+                <div className="relative flex h-full w-full flex-col justify-between p-8 sm:p-10">
+                  <span className="w-fit rounded-full border border-ivory/30 px-4 py-1.5 text-xs tracking-[0.3em] text-ivory/80 uppercase">
+                    {active.title}
+                  </span>
+                  {activeDress && (
+                    <div>
+                      <p className="font-display text-3xl text-ivory italic">
+                        {activeDress.name}
+                      </p>
+                      <p className="mt-1 text-sm text-ivory/60">
+                        {activeDress.descriptor}
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => openDressDetail(activeDress.id, "model_showcase")}
+                        className="mt-4 inline-block text-sm tracking-wide text-ivory underline underline-offset-4 hover:text-accent-soft"
+                      >
+                        Explore the look
+                      </button>
+                    </div>
+                  )}
+                </div>
               </motion.div>
             </AnimatePresence>
           </div>

@@ -257,7 +257,7 @@ export const dresses: Dress[] = [
     detail:
       "A high-neck illusion bodice in hand-beaded oxblood lace opens into a full ball skirt scattered with floral appliqué and a sweeping cathedral train.",
     price: "£6,500",
-    image: "/dresses/oxblood-lace-gown.jpg",
+    image: "/dresses/321f2988-ba4b-4bc1-9dc7-1e0aebd4d19c.jfif",
     tone: ["#4a1420", "#7a1f2b"],
     productReference: "FD-OXB-12",
     availability: "Made to order",

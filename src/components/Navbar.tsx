@@ -40,7 +40,7 @@ export default function Navbar() {
       className={`fixed inset-x-0 top-0 z-50 backdrop-blur-md transition-colors duration-500 ${
         scrolled
           ? "border-b border-ink/10 bg-ivory/85"
-          : "border-b border-ivory/10 bg-ink/15"
+          : "border-b border-ivory/10 bg-ink/35"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 sm:px-10">

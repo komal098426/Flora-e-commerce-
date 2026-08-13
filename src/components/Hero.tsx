@@ -2,10 +2,10 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import Image from "next/image";
 import { useEffect } from "react";
 import { trackEvent } from "@/lib/analytics";
 import FallingPetals from "./FallingPetals";
+import HeroFabricBackground from "./HeroFabricBackground";
 import LayeredModelStage from "./LayeredModelStage";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -39,27 +39,10 @@ export default function Hero() {
   return (
     <section id="top" className="relative flex min-h-svh items-center overflow-hidden bg-ink">
 
-      {/* ── Layer 0: wisteria atmospheric background ── */}
-      <motion.div
-        className="absolute inset-0 z-0"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: reduceMotion ? 0.01 : 1.4, ease: EASE }}
-      >
-        <Image
-          src="/dresses/hero.jpg"
-          alt=""
-          aria-hidden="true"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        {/* light bottom fade for text legibility — image is already dark */}
-        <div className="absolute inset-0 bg-linear-to-b from-black/5 via-transparent to-black/50" />
-        {/* subtle vignette */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_100%_at_50%_0%,transparent_50%,rgba(21,19,15,0.3)_100%)]" />
-      </motion.div>
+      {/* ── Layer 0: flowing red-fabric background ── */}
+      <div className="absolute inset-0 z-0">
+        <HeroFabricBackground />
+      </div>
 
       {/* ── Layer 1: falling petals (behind models, above background) ── */}
       <FallingPetals />

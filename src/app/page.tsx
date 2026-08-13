@@ -1,6 +1,6 @@
 import BrandStatement from "@/components/BrandStatement";
 import Collection from "@/components/Collection";
-import Conversion from "@/components/Conversion";
+import Concierge from "@/components/Concierge";
 import DetailStory from "@/components/DetailStory";
 import DressDetailProvider from "@/components/DressDetailProvider";
 import Footer from "@/components/Footer";
@@ -26,7 +26,7 @@ export default function Home() {
         <ModelShowcase />
         <DetailStory />
         <SocialProof />
-        <Conversion />
+        <Concierge />
       </main>
       <Footer />
     </DressDetailProvider>

@@ -8,7 +8,9 @@ export type AnalyticsEvent =
   | "order_summary_viewed"
   | "whatsapp_cta_clicked"
   | "whatsapp_handoff_failed"
-  | "product_shared";
+  | "product_shared"
+  | "concierge_viewed"
+  | "concierge_cta_clicked";
 
 type AnalyticsProps = Record<string, string | number | boolean | undefined>;
 

@@ -58,3 +58,28 @@ export function buildEnquiryMessage(dress: Dress): string {
 export function buildWhatsAppLink(message: string): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
+
+export type ConciergeIntent =
+  | "general"
+  | "order"
+  | "availability"
+  | "size"
+  | "styling"
+  | "delivery"
+  | "appointment";
+
+const CONCIERGE_MESSAGES: Record<ConciergeIntent, string> = {
+  general:
+    "Hello Flora Dahlia, I would like assistance choosing a dress from the collection.",
+  order: "Hello Flora Dahlia, I would like to place an order. Could you help me get started?",
+  availability:
+    "Hello Flora Dahlia, could you confirm availability — including size and colour — for a piece I'm interested in?",
+  size: "Hello Flora Dahlia, I would like help choosing the right size and fit.",
+  styling: "Hello Flora Dahlia, I would like styling guidance for an upcoming occasion.",
+  delivery: "Hello Flora Dahlia, I would like to know about delivery options and timing.",
+  appointment: "Hello Flora Dahlia, I would like to arrange a private styling consultation.",
+};
+
+export function buildConciergeMessage(intent: ConciergeIntent): string {
+  return CONCIERGE_MESSAGES[intent];
+}

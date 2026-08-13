@@ -7,7 +7,7 @@ const stages = [
     label: "01 — Silhouette",
     title: "The line comes first",
     copy: "Every piece is draped directly on a form before a single seam is cut, so the finished silhouette holds its shape from the first fitting.",
-    image: "/dresses/29cbf934-9be2-4874-aaee-deca828dd50b.jfif",
+    image: "/dresses/29cbf934-9be2-4874-aaee-deca828dd50b.jpg",
     alt: "Pearl Cascade Gown — ivory satin ball gown with pearl and crystal embroidery",
   },
   {
@@ -15,7 +15,7 @@ const stages = [
     label: "02 — Fabric",
     title: "Fibres, chosen deliberately",
     copy: "Silk charmeuse, wool crepe, duchesse satin — each fabric is selected for how it falls and moves, not only how it photographs.",
-    image: "/dresses/37c7158c-2e8a-41e1-8126-3373bff96cce.jfif",
+    image: "/dresses/37c7158c-2e8a-41e1-8126-3373bff96cce.jpg",
     alt: "Silk Flora Skirt — luminous champagne satin A-line skirt with trailing floral embroidery",
   },
   {
@@ -23,7 +23,7 @@ const stages = [
     label: "03 — Construction",
     title: "Finished by hand",
     copy: "French seams, hand-set pleats, and covered closures are standard, not optional — the inside of the garment is made to the same standard as the outside.",
-    image: "/dresses/405c352a-baac-45c4-b39c-d5aa34dbde4a.jfif",
+    image: "/dresses/405c352a-baac-45c4-b39c-d5aa34dbde4a.jpg",
     alt: "Azure Tulip Gown — white and powder blue mermaid gown with sculpted tulip appliqué",
   },
 ];

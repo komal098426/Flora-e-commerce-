@@ -257,7 +257,7 @@ export const dresses: Dress[] = [
     detail:
       "A high-neck illusion bodice in hand-beaded oxblood lace opens into a full ball skirt scattered with floral appliqué and a sweeping cathedral train.",
     price: "£6,500",
-    image: "/dresses/321f2988-ba4b-4bc1-9dc7-1e0aebd4d19c.jfif",
+    image: "/dresses/321f2988-ba4b-4bc1-9dc7-1e0aebd4d19c.jpg",
     tone: ["#4a1420", "#7a1f2b"],
     productReference: "FD-OXB-12",
     availability: "Made to order",
@@ -347,7 +347,7 @@ export const dresses: Dress[] = [
     detail:
       "A long-sleeve ivory satin ball gown traced from collar to hem in cascading pearl and crystal embroidery, gathered at the waist with a sculptural satin bow.",
     price: "£5,800",
-    image: "/dresses/29cbf934-9be2-4874-aaee-deca828dd50b.jfif",
+    image: "/dresses/29cbf934-9be2-4874-aaee-deca828dd50b.jpg",
     tone: ["#f5f0e8", "#d4c9a8"],
     productReference: "FD-PRC-18",
     availability: "Made to order",
@@ -365,7 +365,7 @@ export const dresses: Dress[] = [
     detail:
       "A fluid A-line skirt in luminous champagne satin, its surface traced with delicate trailing floral and pearl embroidery that catches the light with every step.",
     price: "£1,800",
-    image: "/dresses/37c7158c-2e8a-41e1-8126-3373bff96cce.jfif",
+    image: "/dresses/37c7158c-2e8a-41e1-8126-3373bff96cce.jpg",
     tone: ["#e8dfc8", "#c9b99a"],
     productReference: "FD-SFS-19",
     availability: "Made to order",
@@ -383,7 +383,7 @@ export const dresses: Dress[] = [
     detail:
       "A fitted mermaid silhouette in ivory crepe, its bodice sculpted with oversized powder-blue tulip appliqué and sheer flowing sleeves that trail like petals in motion.",
     price: "£3,400",
-    image: "/dresses/405c352a-baac-45c4-b39c-d5aa34dbde4a.jfif",
+    image: "/dresses/405c352a-baac-45c4-b39c-d5aa34dbde4a.jpg",
     tone: ["#ddeef7", "#f4f4f4"],
     productReference: "FD-AZT-20",
     availability: "Made to order",

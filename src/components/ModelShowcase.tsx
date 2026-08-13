@@ -18,9 +18,21 @@ export default function ModelShowcase() {
     <section
       id="showcase"
       aria-labelledby="showcase-heading"
-      className="bg-ink py-28 sm:py-36"
+      className="relative overflow-hidden bg-ink py-28 sm:py-36"
     >
-      <div className="mx-auto max-w-7xl px-6 sm:px-10">
+      <div className="absolute inset-0 z-0" aria-hidden="true">
+        <Image
+          src="/showcase-fabric-oxblood.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-ink/78" />
+        <div className="absolute inset-0 bg-linear-to-t from-ink via-ink/40 to-ink/70" />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10">
         <RevealOnScroll className="mb-16 max-w-2xl">
           <p className="mb-5 text-xs tracking-[0.4em] text-accent-soft uppercase">
             Interactive Showcase

@@ -49,7 +49,7 @@ export default function Concierge() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="relative overflow-hidden bg-ink py-28 sm:py-36"
+      className="relative overflow-hidden bg-ink pt-28 pb-16 sm:pt-36 sm:pb-20"
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 px-6 sm:px-10 lg:grid-cols-2">
         <RevealOnScroll>
